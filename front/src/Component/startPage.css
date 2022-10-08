@@ -1,0 +1,27 @@
+.text-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.text-link:hover {
+  text-decoration: none !important;
+  color: black;
+}
+
+.active-link {
+  position: relative;
+  color: #223a75;
+}
+
+/* bottom line */
+.active-link::after {
+  content: "";
+  position: absolute;
+  background-color: #223a75;
+
+  width: 100%;
+  border-radius: 10%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+}
