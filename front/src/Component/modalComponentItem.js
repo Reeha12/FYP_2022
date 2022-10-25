@@ -9,7 +9,7 @@ const checkPath = (p) => {
   return window.location.pathname === p;
 };
 
-function StartPageItem({ path, name }) {
+function ModalComponentItem({ path, name }) {
   return (
     <NavLink
       className={(isActive) =>
@@ -24,4 +24,4 @@ function StartPageItem({ path, name }) {
   );
 }
 
-export default StartPageItem;
+export default ModalComponentItem;

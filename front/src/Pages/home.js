@@ -1,10 +1,11 @@
 import React from "react";
 import { lightBackground } from "../assets/utils/colors";
 import review from "../assets/images/review.png";
+import ModalComponent from "../Component/modalComponent";
 
-const Home = () => {
+const Home = ({ openModal }) => {
   return (
-    <div>
+    <div onClick={() => openModal(true)}>
       <div
         style={{
           width: "100%",

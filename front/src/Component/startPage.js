@@ -8,7 +8,7 @@ import Home from "../Pages/home";
 import About from "../Pages/about";
 import StartPageItem from "./startPageItem";
 
-const StartPage = () => {
+const StartPage = ({ openModal }) => {
   let arr = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
@@ -60,8 +60,9 @@ const StartPage = () => {
         </div>
       </div>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<Home openModal={openModal} />}></Route>
         <Route path="/about" element={<About />}></Route>
+        {/* <Route path="*" element={<Home openModal={openModal} />}></Route> */}
       </Routes>
     </div>
   );
